@@ -1,0 +1,109 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+ <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+ <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+ <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+ <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+	
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static "css/blog.css" %}">
+	<link rel="stylesheet" href=“{ % static "css/main.css" %}”>
+	<!-- <script src="{ % static "js/vendor/modernizr-2.7.1.min.js" %}"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<style>
+	  
+		body {
+	      		position: relative;
+	  	}
+
+		  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+		  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+		  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+		  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+		  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;} 
+	 </style>
+
+	<title>GSW</title>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<!-- Navigation -->
+
+	<nav class="navbar navbar-fixed-top topnav navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p class="navbar-text navbar-left">Graeme Stewart Watt</p>
+				<a class="navbar-brand" href="#" target="_blank"><img alt="BRAND_LOGO" src=".."></img></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="myNavBar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+            	<!-- /.navbar-collapse -->
+        	</div>
+        <!-- /.container -->
+    </nav>
+
+        <div class="jumbotron">
+            <h1><a href="/">GSW</a></h1>
+        </div>
+	<div id="section1" class="container-fluid">
+	  <h1>Section 1</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+	<div id="section2" class="container-fluid">
+	  <h1>Section 2</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+	<div id="section3" class="container-fluid">
+	  <h1>Section 3</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+	<div id="section41" class="container-fluid">
+	  <h1>Section 4 Submenu 1</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+	<div id="section42" class="container-fluid">
+	  <h1>Section 4 Submenu 2</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>	
+    </body>
+</html>
+
