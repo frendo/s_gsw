@@ -23,7 +23,7 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 	<style>
-	  
+	{% block sections %}	  
 		body {
 	      		position: relative;
 	  	}
@@ -33,15 +33,16 @@
 		  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
 		  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
 		  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;} 
-	 </style>
+	{% endblock %} 
+	</style>
 
-	<title>GSW</title>
+	<title>{% block title %}GSW{% endblock %}</title>
 
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<!-- Navigation -->
-
+	{% block nav %}
 	<nav class="navbar navbar-fixed-top topnav navbar-inverse" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -58,7 +59,7 @@
 			<div class="collapse navbar-collapse" id="myNavBar">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="#home">Home</a>
+						<a href="{% url "homepage" %}">Home</a>
 					</li>
 					<li>
 						<a href="#about">About</a>
@@ -69,13 +70,18 @@
 					<li>
 						<a href="#contact">Contact</a>
 					</li>
+					<li>
+                                                <a href="{% url "post_list" %}">Blog</a>
+                                        </li>
+
 				</ul>
 			</div>
             	<!-- /.navbar-collapse -->
         	</div>
         <!-- /.container -->
     </nav>
-
+    {% endblock %}
+    {% block content %}
         <div class="jumbotron">
             <h1><a href="/">GSW</a></h1>
         </div>
@@ -104,6 +110,7 @@
 	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 	</div>	
+    {% endblock %}
     </body>
 </html>
 
