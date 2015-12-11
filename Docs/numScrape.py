@@ -1,5 +1,5 @@
 #!/usr/bin/pyth n
-# Program to scrap web page thinks using BeautifulSoup4 
+# Program to scrap web page thinks using BeautifulSoup4
 #for tag in tags:
 #    print (tag.get('href', None))
 
@@ -8,9 +8,9 @@ import urllib.request
 import sys
 
 def get_tags(url, tags):
-	
+
 	with urllib.request.urlopen(url) as response:
-		html = response.read() 
+		html = response.read()
 	soup = BeautifulSoup(html, "html.parser")
 	# Retrieve all of the anchor tags
 	tags = soup('span')
@@ -32,14 +32,14 @@ def process_urls(url):
     print ('Sum', span_sum)
 
 def main():
-	
+
     if len(sys.argv) > 2:
-        url = int(sys.argv[1])  
+        url = int(sys.argv[1])
     else:
         url = input('Enter URL: ')
 
     process_urls(url)
-	
+
 if __name__ == '__main__':
   main()
 
