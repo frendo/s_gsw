@@ -17,7 +17,8 @@
 	
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static "css/blog.css" %}">
-	<link rel="stylesheet" href=“{ % static "css/main.css" %}”>
+        <link rel="stylesheet" href="{% static "css/main.css" %}">
+        <link rel="stylesheet" href="{% static "home_g/css/custom.css" %}">
 	<!-- <script src="{ % static "js/vendor/modernizr-2.7.1.min.js" %}"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -52,10 +53,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<p class="navbar-text navbar-left">Graeme Stewart Watt</p>
 				<span>
                     <a class="navbar-brand" href="#" target="_blank"><img alt="BRAND_LOGO" src="{% static "home_g/images/lambda_64px.png" %}"></img></a>
 				</span>
-				<p class="navbar-text navbar-left">Graeme Stewart Watt</p>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="myNavBar">
@@ -86,7 +87,7 @@
     {% endblock %}
     {% block content %}
         <div class="jumbotron">
-            <h1><a href="/">GSW</a></h1>
+            <h1><a href="/"></a></h1>
         </div>
 	<div id="section1" class="container-fluid">
 	  <h1>Section 1</h1>
